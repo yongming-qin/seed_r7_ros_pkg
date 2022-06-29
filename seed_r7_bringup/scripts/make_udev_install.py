@@ -9,7 +9,7 @@ import shutil
 
 class UdevInstall:
     def setup_serial(self): 
-        choice = raw_input("install setserial yes(y) or none(n) : ")
+        choice = input("install setserial yes(y) or none(n) : ")
         if choice in ['y', 'ye', 'yes']:
             os.system('sudo apt-get install setserial')
    
@@ -31,7 +31,7 @@ class UdevInstall:
                 'SUBSYSTEM=="tty",ATTRS{idVendor}=="0483",ATTRS{idProduct}=="a1e8",ATTRS{serial}=="000000000020",MODE="666",SYMLINK+="aero_lower", RUN+="/bin/setserial /dev/aero_lower low_latency"\n'
 
             print("Please insert upper USB to PC port")
-            choice = raw_input("yes(y) or none(n) : ")
+            choice = input("yes(y) or none(n) : ")
             if choice in ['y', 'yes']:
                upper = upper_string.split(',')
 
@@ -51,7 +51,7 @@ class UdevInstall:
                print(upper_string)
             
             print("Please insert lower USB to PC port")
-            choice = raw_input("yes(y) or none(n) : ")
+            choice = input("yes(y) or none(n) : ")
             if choice in ['y', 'yes']:
                lower = lower_string.split(',')
 
