@@ -20,6 +20,7 @@
   <depend>gmapping</depend>
   <depend>map_server</depend>
   <depend>teb_local_planner</depend>
+  <depend>full_coverage_path_planner</depend>
   <depend>rospy</depend>
 
 </package>

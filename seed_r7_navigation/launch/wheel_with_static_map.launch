@@ -7,8 +7,8 @@
            file="$(find seed_r7_navigation)/launch/wheel_bringup.launch" />
 
   <!-- Run map navigation -->
-  <arg name="map_localization_file"    default="$(find seed_r7_navigation)/maps/map.yaml" />
-  <arg name="map_keepout_file"         default="$(find seed_r7_navigation)/maps/map.yaml" />
+  <arg name="map_localization_file"    default="$(find seed_r7_navigation)/maps/map_escort.yaml" />
+  <arg name="map_keepout_file"         default="$(find seed_r7_navigation)/maps/map_escort.yaml" />
 
   <!--- Run Move Base -->
   <include file="$(find seed_r7_navigation)/launch/static_map_navigation.launch">

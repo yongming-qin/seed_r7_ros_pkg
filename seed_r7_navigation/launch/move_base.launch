@@ -25,7 +25,11 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCL
   <arg name="no_static_map" default="false"/>
 
    <!-- global planner type -->
-  <arg name="base_global_planner" default="navfn/NavfnROS"/>
+  <!-- <arg name="base_global_planner" default="navfn/NavfnROS"/> -->
+  <arg name="base_global_planner" default="full_coverage_path_planner/SpiralSTC" />
+  <arg name="global_costmap/robot_radius" value="0.05"/>
+  <arg name="SpiralSTC/robot_radius" value="0.05"/>
+  <arg name="SpiralSTC/tool_radius" value="0.01"/>
 
   <!-- local planner option:
        EBandPlannerROS, TrajectoryPlannerROS, DWAPlannerROS -->

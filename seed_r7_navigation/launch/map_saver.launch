@@ -1,4 +1,4 @@
 <?xml version="1.0"?>
 <launch>
-  <node name="map_saver" pkg="map_server" type="map_saver" args="-f $(find seed_r7_navigation)/maps/map" output="screen"/>
+  <node name="map_saver" pkg="map_server" type="map_saver" args="--occ 90 --free 10 -f $(find seed_r7_navigation)/maps/cpp2" output="screen"/>
 </launch>
